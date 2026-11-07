@@ -1,11 +1,8 @@
 # AuraBook
 AuraBook - Smart Book Exchange and Learning Platform
-<div align="center">
-  <img src="docs/images/homepage.png" alt="AuraBook homepage with book discovery, search, and category shortcuts" width="100%">
-  <h1>AuraBook</h1>
-  <p><strong>Smart Book Exchange and Learning Platform</strong></p>
-  <p>Find, buy, sell, and exchange books with students in nearby villages.</p>
-</div>
+<p align="center">
+  <img src="docs/images/aurabook-banner.svg" alt="AuraBook — Smart Book Exchange and Learning Platform" width="100%">
+</p>
 
 <p align="center">
   <img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white">
@@ -16,11 +13,45 @@ AuraBook - Smart Book Exchange and Learning Platform
   <img alt="Bootstrap 5" src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white">
 </p>
 
+<p align="center">
+  <strong>Academic Project</strong> &nbsp;·&nbsp; <strong>PHP + MySQL</strong> &nbsp;·&nbsp; <strong>Gujarati, Hindi + English</strong> &nbsp;·&nbsp; <strong>Cash on Delivery</strong>
+</p>
+
+## Contents
+
+- [Overview](#overview)
+- [Project snapshot](#project-snapshot)
+- [Features](#features)
+- [Workflows](#how-the-workflows-fit-together)
+- [Screenshots and diagrams](#screenshots-and-system-diagrams)
+- [Technology stack](#technology-stack)
+- [Architecture](#application-architecture)
+- [Core modules](#core-application-modules)
+- [Database](#database-overview)
+- [Local setup](#run-locally)
+- [Deployment and security notes](#important-project-notes)
+- [Academic context](#academic-context)
+- [References](#references)
+- [License](#license)
+
 ## Overview
 
-AuraBook is a web-based book marketplace and learning resource platform for students in rural and semi-urban communities. It brings used-book listings, a new-book catalogue, seller listings, buyer orders, and administrator tools into one PHP and MySQL application. The interface includes book search, village and category filters, and Gujarati and English language options described in the supplied project report.
+AuraBook is a web-based book marketplace and learning resource platform for students in rural and semi-urban communities. It brings used-book listings, a new-book catalogue, seller listings, buyer orders, and administrator tools into one PHP and MySQL application. Students can search books, filter used listings by village and category, and switch between Gujarati, Hindi, and English interface text.
 
 The project is designed to help students discover affordable books nearby and give sellers a simple way to list books with condition, price, location, and photographs.
+
+## Project snapshot
+
+| Item | Details |
+|---|---|
+| Product | AuraBook — Smart Book Exchange and Learning Platform |
+| Audience | Students, book sellers, and administrators |
+| Main use | Discover nearby used books, browse new books, and place orders |
+| Backend | PHP with MySQL/MariaDB |
+| Local environment | WAMP Server, Apache, and phpMyAdmin |
+| Languages | Gujarati, Hindi, and English interface text |
+| Payment flow | Cash on Delivery (COD) |
+| Academic context | BCA Semester V, Subject 506 — Project Development |
 
 ## Features
 
@@ -130,14 +161,15 @@ flowchart LR
 
 The browser loads PHP pages from the web server. PHP reads the session, validates requests, uses PDO to query MySQL, and returns HTML or JSON. Book and profile photographs are stored in upload directories, with relative image paths recorded in database rows.
 
-```text
-Browser
-  ├── HTML, CSS, JavaScript, Bootstrap
-  └── PHP pages and form handlers
-        ├── PHP sessions for signed-in users
-        ├── PDO prepared queries
-        ├── Image upload folders
-        └── MySQL database: kitabbazar
+```mermaid
+flowchart LR
+    V[Student or seller browser] -->|HTML forms and requests| P[PHP application]
+    A[Administrator browser] -->|Admin requests| P
+    P -->|PDO queries| D[(MySQL / MariaDB)]
+    P -->|Read and save| U[Book and profile uploads]
+    D --> P
+    P -->|HTML or JSON response| V
+    P -->|HTML or JSON response| A
 ```
 
 ## Core application modules
@@ -152,11 +184,11 @@ Browser
 | `place_order.php` and `my_orders.php` | Save used-book orders and look up order status |
 | `profile.php` | Signed-in profile information and profile photo |
 | `admin_order.php` | Administrator order review and status updates |
-| `kitabbazar.sql` | MySQL database schema and initial database content |
+| `kitabbazar.sql` | MySQL database schema |
 
 ## Database overview
 
-The supplied project report describes these six database tables:
+AuraBook uses six relational tables:
 
 | Table | Purpose |
 |---|---|
@@ -172,7 +204,7 @@ Declared relationships include a user having multiple book listings, used-book o
 ## Run locally
 
 1. Install a local server package with Apache, PHP, and MySQL or MariaDB, such as WAMP Server.
-2. Copy the AuraBook project folder into the server document root, commonly `C:\\wamp64\\www\\AuraBook`.
+2. Copy the AuraBook project folder into the server document root, commonly `C:\wamp64\www\AuraBook`.
 3. Start Apache and MySQL from the server control panel.
 4. In phpMyAdmin, create or select the database named `kitabbazar` and import `kitabbazar.sql`.
 5. Open `db.php` and set the local database host, database name, username, and password. Do not commit real credentials.
@@ -184,7 +216,7 @@ The exact PHP folder name may vary in the extracted project archive. Keep the PH
 
 ## Important project notes
 
-- The checkout flow described in the project uses Cash on Delivery. No third-party online payment gateway is included.
+- Checkout uses Cash on Delivery. No third-party online payment gateway is included.
 - GitHub Pages cannot execute PHP. Keep the source code on GitHub, and use a PHP/MySQL-capable host for a fully working deployment. See [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
 - Keep database passwords, real user records, and personal upload files out of public repositories.
 - The database tracks IP addresses for visitor-count activity; review data-retention and privacy needs before deploying publicly.
@@ -192,7 +224,7 @@ The exact PHP folder name may vary in the extracted project archive. Keep the PH
 
 ## Academic context
 
-AuraBook is documented as a Semester V project for Subject 506 — Project Development at Smt. B.K. Mehta I.T. Centre (BCA College), Palanpur. The project materials refer to affordable access to books for students in nearby villages.
+AuraBook is a Semester V project for Subject 506 — Project Development at Smt. B.K. Mehta I.T. Centre (BCA College), Palanpur. It focuses on improving access to affordable books for students in nearby villages.
 
 ## References
 
