@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="440" viewBox="0 0 1600 440" role="img" aria-labelledby="title desc">
+  <title id="title">AuraBook</title>
+  <desc id="desc">Smart book exchange and learning platform for students in nearby villages</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#073b32"/>
+      <stop offset="1" stop-color="#087f5b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#f4a900"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="440" rx="36" fill="url(#bg)"/>
+  <circle cx="1450" cy="70" r="190" fill="#ffffff" opacity=".045"/>
+  <circle cx="1280" cy="410" r="260" fill="#ffffff" opacity=".035"/>
+  <path d="M0 355 C250 300 390 460 650 390 S1060 310 1330 390 S1510 425 1600 380 V440 H0Z" fill="#ffffff" opacity=".045"/>
+  <g transform="translate(1140 110)">
+    <path d="M28 28c68-30 133-25 188 7v165c-55-32-120-37-188-7z" fill="#f8fbff"/>
+    <path d="M216 35c55-32 120-37 188-7v165c-68-30-133-25-188 7z" fill="#eaf2ff"/>
+    <path d="M216 35v165" stroke="#0a684f" stroke-width="8"/>
+    <path d="M51 71c44-14 89-13 133 4M51 103c44-14 89-13 133 4M51 135c44-14 89-13 133 4M247 75c44-17 89-18 133-4M247 107c44-17 89-18 133-4M247 139c44-17 89-18 133-4" fill="none" stroke="#b6c8d6" stroke-width="7" stroke-linecap="round"/>
+    <path d="M195 214h43" stroke="url(#gold)" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(112 110)">
+    <rect width="64" height="64" rx="18" fill="url(#gold)"/>
+    <path d="M15 17c12-5 23-4 33 2v31c-10-6-21-7-33-2zM49 19c10-6 21-7 33-2v31c-12-5-23-4-33 2z" transform="translate(-1 0)" fill="none" stroke="#073b32" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+  <text x="112" y="232" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="76" font-weight="700">AuraBook</text>
+  <text x="116" y="286" fill="#c8f2df" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" letter-spacing="4">SMART BOOK EXCHANGE &amp; LEARNING PLATFORM</text>
+  <text x="116" y="345" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="27">Find, share, and discover books across nearby villages.</text>
+  <rect x="116" y="374" width="254" height="4" rx="2" fill="url(#gold)"/>
+</svg>
