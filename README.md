@@ -126,12 +126,12 @@ flowchart LR
 ### Main interface and administration
 
 <p align="center">
-  <img src="docs/images/homepage.png" alt="AuraBook home page" width="100%">
+  <img src="homepage.png" alt="AuraBook home page" width="100%">
 </p>
 <p align="center"><em>Home page — book discovery, search, language choices, and catalogue shortcuts.</em></p>
 
 <p align="center">
-  <img src="docs/images/admin-new-books.png" alt="AuraBook administrator page for managing new books" width="100%">
+  <img src="admin-new-books.png" alt="AuraBook administrator page for managing new books" width="100%">
 </p>
 <p align="center"><em>Admin catalogue — add and review new-book inventory.</em></p>
 
@@ -139,11 +139,11 @@ flowchart LR
 
 | System context | Level 1 data flow |
 |---|---|
-| ![AuraBook system context diagram](docs/images/system-context.png) | ![AuraBook Level 1 data-flow diagram](docs/images/data-flow.png) |
+| ![AuraBook system context diagram](system-context.png) | ![AuraBook Level 1 data-flow diagram](data-flow.png) |
 
 | Database entity relationships | Used-book order workflow |
 |---|---|
-| ![AuraBook database ERD](docs/images/database-erd.png) | ![AuraBook used-book order workflow](docs/images/used-book-order-workflow.png) |
+| ![AuraBook database ERD](database-erd.png) | ![AuraBook used-book order workflow](used-book-order-workflow.png) |
 
 ## Technology stack
 
