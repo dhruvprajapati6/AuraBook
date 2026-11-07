@@ -1,7 +1,7 @@
 # AuraBook
 AuraBook - Smart Book Exchange and Learning Platform
 <p align="center">
-  <img src="docs/images/aurabook-banner.svg" alt="AuraBook — Smart Book Exchange and Learning Platform" width="100%">
+  <img src="aurabook-banner.svg" alt="AuraBook — Smart Book Exchange and Learning Platform" width="100%">
 </p>
 
 <p align="center">
