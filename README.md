@@ -1,4 +1,4 @@
-# AuraBook
+<h2> # AuraBook </h2>
 AuraBook - Smart Book Exchange and Learning Platform
 <p align="center">
   <img src="aurabook-banner.svg" alt="AuraBook — Smart Book Exchange and Learning Platform" width="100%">
