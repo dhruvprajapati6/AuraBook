@@ -1,7 +1,12 @@
-# AuraBook
-AuraBook - Smart Book Exchange and Learning Platform
 <p align="center">
   <img src="aurabook-banner.svg" alt="AuraBook — Smart Book Exchange and Learning Platform" width="100%">
+</p>
+
+<h1 align="center">📚 AuraBook</h1>
+
+<p align="center">
+  <strong>Smart Book Exchange and Learning Platform</strong><br>
+  Affordable used and new books for students in rural and semi-urban communities.
 </p>
 
 <p align="center">
@@ -10,79 +15,112 @@ AuraBook - Smart Book Exchange and Learning Platform
   <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white">
   <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white">
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black">
-  <img alt="Bootstrap 5" src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white">
+  <img alt="Bootstrap 5" src="https://img.shields.io/badge/Bootstrap_5-7952B3?logo=bootstrap&logoColor=white">
+  <img alt="Languages" src="https://img.shields.io/badge/Languages-ગુજરાતી%20%7C%20हिन्दी%20%7C%20English-orange">
+  <img alt="Payment" src="https://img.shields.io/badge/Payment-Cash%20on%20Delivery-green">
+  <img alt="Status" src="https://img.shields.io/badge/Status-Academic%20Project-blue">
 </p>
 
 <p align="center">
-  <strong>Academic Project</strong> &nbsp;·&nbsp; <strong>PHP + MySQL</strong> &nbsp;·&nbsp; <strong>Gujarati, Hindi + English</strong> &nbsp;·&nbsp; <strong>Cash on Delivery</strong>
+  <a href="#-overview">Overview</a> ·
+  <a href="#-features">Features</a> ·
+  <a href="#-screenshots">Screenshots</a> ·
+  <a href="#-getting-started">Getting Started</a> ·
+  <a href="#-database">Database</a> ·
+  <a href="#-security-and-privacy">Security</a>
 </p>
 
-## Contents
+---
 
-- [Overview](#overview)
-- [Project snapshot](#project-snapshot)
-- [Features](#features)
-- [Workflows](#how-the-workflows-fit-together)
-- [Screenshots and diagrams](#screenshots-and-system-diagrams)
-- [Technology stack](#technology-stack)
-- [Architecture](#application-architecture)
-- [Core modules](#core-application-modules)
-- [Database](#database-overview)
-- [Local setup](#run-locally)
-- [Deployment and security notes](#important-project-notes)
-- [Academic context](#academic-context)
-- [References](#references)
-- [License](#license)
+## 📑 Table of Contents
 
-## Overview
+- [Overview](#-overview)
+- [Project Snapshot](#-project-snapshot)
+- [Features](#-features)
+- [User Workflows](#-user-workflows)
+- [Screenshots](#-screenshots)
+- [System Diagrams](#-system-diagrams)
+- [Technology Stack](#-technology-stack)
+- [Architecture](#-architecture)
+- [Core Modules](#-core-modules)
+- [Database](#-database)
+- [Getting Started](#-getting-started)
+- [Deployment Notes](#-deployment-notes)
+- [Security and Privacy](#-security-and-privacy)
+- [Academic Context](#-academic-context)
+- [Roadmap Ideas](#-roadmap-ideas)
+- [Contributing](#-contributing)
+- [References](#-references)
+- [License](#-license)
 
-AuraBook is a web-based book marketplace and learning resource platform for students in rural and semi-urban communities. It brings used-book listings, a new-book catalogue, seller listings, buyer orders, and administrator tools into one PHP and MySQL application. Students can search books, filter used listings by village and category, and switch between Gujarati, Hindi, and English interface text.
+---
 
-The project is designed to help students discover affordable books nearby and give sellers a simple way to list books with condition, price, location, and photographs.
+## 🌟 Overview
 
-## Project snapshot
+**AuraBook** is a web-based book marketplace and learning resource platform built for students in rural and semi-urban communities. It combines **used-book listings**, a **new-book catalogue**, **seller tools**, **buyer orders**, and an **administrator panel** in a single PHP + MySQL application.
+
+Students can search for books, filter used listings by **village** and **category/class**, and use the interface in **Gujarati, Hindi, or English**. Sellers get a simple way to list books with condition, price, location, and photographs, so affordable books can be found close to home.
+
+### Why AuraBook?
+
+- 📍 **Local discovery**: find used books in nearby villages.
+- 💸 **Affordable**: second-hand books at student-friendly prices.
+- 🗣️ **Multilingual**: Gujarati, Hindi, and English interface text.
+- 🚚 **Simple checkout**: Cash on Delivery, with no online payment gateway needed.
+
+---
+
+## 🧾 Project Snapshot
 
 | Item | Details |
 |---|---|
-| Product | AuraBook — Smart Book Exchange and Learning Platform |
-| Audience | Students, book sellers, and administrators |
-| Main use | Discover nearby used books, browse new books, and place orders |
-| Backend | PHP with MySQL/MariaDB |
-| Local environment | WAMP Server, Apache, and phpMyAdmin |
-| Languages | Gujarati, Hindi, and English interface text |
-| Payment flow | Cash on Delivery (COD) |
-| Academic context | BCA Semester V, Subject 506 — Project Development |
+| **Product** | AuraBook — Smart Book Exchange and Learning Platform |
+| **Audience** | Students, book sellers, and administrators |
+| **Main use** | Discover nearby used books, browse new books, and place orders |
+| **Backend** | PHP with MySQL / MariaDB |
+| **Local environment** | WAMP Server, Apache, and phpMyAdmin |
+| **Languages** | Gujarati, Hindi, and English |
+| **Payment flow** | Cash on Delivery (COD) |
+| **Academic context** | BCA Semester V, Subject 506 — Project Development |
 
-## Features
+---
 
-### Book discovery
+## ✨ Features
 
-- Browse used books and new books in separate catalogues
-- Search by book title, author, or subject
-- Filter used-book listings by village and category or class
-- Review listing details such as author, condition, price, description, and images
-- Explore learning-oriented categories, including school classes, college and ITI, competitive exams, stories, and downloadable reading resources
+### 🔍 Book Discovery
 
-### Student and seller accounts
+- Browse **used books** and **new books** in separate catalogues
+- Search by **title**, **author**, or **subject**
+- Filter used listings by **village** and **category / class**
+- View listing details: author, condition, price, description, and images
+- Explore learning categories: school classes, college and ITI, competitive exams, stories, and downloadable reading resources
 
-- Register and sign in with an account
-- Recover account access using the account recovery form
-- Create used-book listings with title, author, price, condition, village, category or class, description, and up to five photographs
-- Review personal listings in the My Sales area
+### 👤 Student and Seller Accounts
+
+- Register and sign in securely
+- Recover account access via the account recovery form
+- Create used-book listings with title, author, price, condition, village, category/class, description, and **up to 5 photographs**
+- Review your listings in the **My Sales** area
 - View and update profile details and profile photo
 
-### Orders and administration
+### 🛒 Orders
 
-- Submit used-book or new-book orders with buyer contact and delivery details
-- Use Cash on Delivery as the displayed payment method
-- Find used-book orders using the contact information requested by the order page
-- Let administrators review users, new-book inventory, and used-book orders
-- Update order status from the administration interface
+- Place **used-book** or **new-book** orders with buyer contact and delivery details
+- Pay with **Cash on Delivery**
+- Look up used-book order status with the contact information requested on the order page
+
+### 🛠️ Administration
+
+- Review users, new-book inventory, and used-book orders
+- Add and manage the new-book catalogue
+- Update order status from the admin interface
 - Display site visit counts on the home page
 
-## How the workflows fit together
+---
 
-### Buyer workflow
+## 🔄 User Workflows
+
+### Buyer
 
 ```mermaid
 flowchart LR
@@ -97,7 +135,7 @@ flowchart LR
     H --> I[Track order status]
 ```
 
-### Seller workflow
+### Seller
 
 ```mermaid
 flowchart LR
@@ -109,7 +147,7 @@ flowchart LR
     F --> G[Manage profile or sign out]
 ```
 
-### Administrator workflow
+### Administrator
 
 ```mermaid
 flowchart LR
@@ -121,9 +159,9 @@ flowchart LR
     F --> G[Buyer checks order status]
 ```
 
-## Screenshots and system diagrams
+---
 
-### Main interface and administration
+## 🖼️ Screenshots
 
 <p align="center">
   <img src="homepage.png" alt="AuraBook home page" width="100%">
@@ -135,29 +173,35 @@ flowchart LR
 </p>
 <p align="center"><em>Admin catalogue — add and review new-book inventory.</em></p>
 
-### Application diagrams
+---
 
-| System context | Level 1 data flow |
-|---|---|
+## 🗺️ System Diagrams
+
+| System Context | Level 1 Data Flow |
+|:---:|:---:|
 | ![AuraBook system context diagram](system-context.png) | ![AuraBook Level 1 data-flow diagram](data-flow.png) |
 
-| Database entity relationships | Used-book order workflow |
-|---|---|
+| Database ERD | Used-Book Order Workflow |
+|:---:|:---:|
 | ![AuraBook database ERD](database-erd.png) | ![AuraBook used-book order workflow](used-book-order-workflow.png) |
 
-## Technology stack
+---
+
+## 🧰 Technology Stack
 
 | Layer | Technology |
 |---|---|
-| Frontend | HTML5, CSS3, JavaScript, Bootstrap 5, Font Awesome |
-| Backend | PHP |
-| Database | MySQL or MariaDB |
-| Data access | PDO and prepared statements |
-| Authentication | PHP sessions and bcrypt password hashing |
-| Local development | WAMP Server or another Apache/PHP/MySQL environment |
-| Database administration | phpMyAdmin or an equivalent MySQL client |
+| **Frontend** | HTML5, CSS3, JavaScript, Bootstrap 5, Font Awesome |
+| **Backend** | PHP |
+| **Database** | MySQL or MariaDB |
+| **Data access** | PDO with prepared statements |
+| **Authentication** | PHP sessions and bcrypt password hashing |
+| **Local development** | WAMP Server or any Apache/PHP/MySQL environment |
+| **DB administration** | phpMyAdmin or an equivalent MySQL client |
 
-## Application architecture
+---
+
+## 🏗️ Architecture
 
 The browser loads PHP pages from the web server. PHP reads the session, validates requests, uses PDO to query MySQL, and returns HTML or JSON. Book and profile photographs are stored in upload directories, with relative image paths recorded in database rows.
 
@@ -172,23 +216,28 @@ flowchart LR
     P -->|HTML or JSON response| A
 ```
 
-## Core application modules
+---
 
-| File or module | Role |
+## 🧩 Core Modules
+
+| File / Module | Role |
 |---|---|
 | `index.php` | Home page, navigation, learning shortcuts, and visitor count |
-| `auth.php` | Registration, sign-in, and account recovery handling |
-| `used_books.php` and `book-details.php` | Used-book directory, filters, and listing details |
-| `sell.php` and `my_sales.php` | Create a used-book listing and review a seller's listings |
-| `new_books.php` and `buy_new_book.php` | New-book catalogue, availability, and order details |
-| `place_order.php` and `my_orders.php` | Save used-book orders and look up order status |
-| `profile.php` | Signed-in profile information and profile photo |
+| `auth.php` | Registration, sign-in, and account recovery |
+| `used_books.php` · `book-details.php` | Used-book directory, filters, and listing details |
+| `sell.php` · `my_sales.php` | Create a used-book listing and review a seller's listings |
+| `new_books.php` · `buy_new_book.php` | New-book catalogue, availability, and order details |
+| `place_order.php` · `my_orders.php` | Save used-book orders and look up order status |
+| `profile.php` | Profile information and profile photo |
 | `admin_order.php` | Administrator order review and status updates |
+| `db.php` | Database connection settings |
 | `kitabbazar.sql` | MySQL database schema |
 
-## Database overview
+---
 
-AuraBook uses six relational tables:
+## 🗄️ Database
+
+AuraBook uses **six relational tables** (database name: `kitabbazar`):
 
 | Table | Purpose |
 |---|---|
@@ -199,41 +248,117 @@ AuraBook uses six relational tables:
 | `new_book_orders` | Buyer and payment/status records for new-book orders |
 | `site_visitors` | Visit date, recent activity, and IP-based visitor count data |
 
-Declared relationships include a user having multiple book listings, used-book orders referring to a listed book, and new-book orders referring to a new-book record. The SQL dump uses primary keys, foreign keys, and a unique email constraint for accounts.
+**Relationships:** a user can have multiple book listings; used-book orders refer to a listed book; new-book orders refer to a new-book record. The schema uses primary keys, foreign keys, and a unique email constraint for accounts.
 
-## Run locally
+---
 
-1. Install a local server package with Apache, PHP, and MySQL or MariaDB, such as WAMP Server.
-2. Copy the AuraBook project folder into the server document root, commonly `C:\wamp64\www\AuraBook`.
-3. Start Apache and MySQL from the server control panel.
-4. In phpMyAdmin, create or select the database named `kitabbazar` and import `kitabbazar.sql`.
-5. Open `db.php` and set the local database host, database name, username, and password. Do not commit real credentials.
-6. Confirm PHP has the PDO MySQL driver and file uploads enabled.
-7. Ensure the book and profile upload folders exist and are writable by the local web server.
-8. Open `http://localhost/AuraBook/index.php` in a browser and navigate through the main pages.
+## 🚀 Getting Started
 
-The exact PHP folder name may vary in the extracted project archive. Keep the PHP pages, SQL file, and upload folders together, and use that folder name in the local URL.
+### Prerequisites
 
-## Important project notes
+- Apache + PHP + MySQL/MariaDB (for example, **WAMP Server**)
+- PHP with the **PDO MySQL** driver and **file uploads** enabled
+- A modern web browser
 
-- Checkout uses Cash on Delivery. No third-party online payment gateway is included.
-- GitHub Pages cannot execute PHP. Keep the source code on GitHub, and use a PHP/MySQL-capable host for a fully working deployment. See [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
-- Keep database passwords, real user records, and personal upload files out of public repositories.
-- The database tracks IP addresses for visitor-count activity; review data-retention and privacy needs before deploying publicly.
-- Use test accounts and sample book listings in demonstrations. Do not expose students' phone numbers, emails, or profile photographs.
+### Installation
 
-## Academic context
+1. **Clone the repository**
 
-AuraBook is a Semester V project for Subject 506 — Project Development at Smt. B.K. Mehta I.T. Centre (BCA College), Palanpur. It focuses on improving access to affordable books for students in nearby villages.
+   ```bash
+   git clone https://github.com/<your-username>/AuraBook.git
+   ```
 
-## References
+2. **Copy the project** into your server document root, for example:
 
-- [PHP documentation](https://www.php.net/docs.php)
-- [MySQL reference manual](https://dev.mysql.com/doc/)
+   ```
+   C:\wamp64\www\AuraBook
+   ```
+
+3. **Start Apache and MySQL** from the WAMP control panel.
+
+4. **Import the database**
+   - Open phpMyAdmin
+   - Create or select a database named `kitabbazar`
+   - Import `kitabbazar.sql`
+
+5. **Configure the connection** in `db.php` (host, database name, username, password).
+   > ⚠️ Never commit real credentials to a public repository.
+
+6. **Prepare upload folders** — make sure the book and profile upload folders exist and are writable by the web server.
+
+7. **Run the app**
+
+   ```
+   http://localhost/AuraBook/index.php
+   ```
+
+> The folder name may differ in your copy of the project. Keep the PHP pages, SQL file, and upload folders together, and use your folder name in the local URL.
+
+---
+
+## ☁️ Deployment Notes
+
+- Checkout uses **Cash on Delivery**. No third-party payment gateway is included.
+- **GitHub Pages cannot run PHP.** Keep the source code on GitHub, and use a PHP/MySQL-capable host for a fully working deployment. See the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+
+---
+
+## 🔐 Security and Privacy
+
+- Passwords are hashed with **bcrypt**; database access uses **PDO prepared statements**.
+- Keep database passwords, real user records, and personal upload files **out of public repositories** (consider a `.gitignore` for config and upload folders).
+- The database stores **IP addresses** for visitor-count activity. Review data-retention and privacy needs before deploying publicly.
+- Use **test accounts and sample listings** for demos. Do not expose students' phone numbers, emails, or profile photographs.
+
+---
+
+## 🎓 Academic Context
+
+AuraBook is a **Semester V** project for **Subject 506 — Project Development** at **Smt. B.K. Mehta I.T. Centre (BCA College), Palanpur**. It focuses on improving access to affordable books for students in nearby villages.
+
+---
+
+## 🛣️ Roadmap Ideas
+
+Possible future improvements (not part of the current release):
+
+- [ ] Online payment gateway option alongside COD
+- [ ] Email/SMS notifications for order status changes
+- [ ] Wishlist and book request feature
+- [ ] Ratings and seller verification
+- [ ] Admin analytics dashboard
+- [ ] Deployment on a PHP/MySQL hosting provider
+
+---
+
+## 🤝 Contributing
+
+Suggestions and improvements are welcome.
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Commit your changes: `git commit -m "Add your feature"`
+4. Push the branch: `git push origin feature/your-feature`
+5. Open a Pull Request
+
+---
+
+## 📚 References
+
+- [PHP Documentation](https://www.php.net/docs.php)
+- [MySQL Reference Manual](https://dev.mysql.com/doc/)
 - [Bootstrap 5](https://getbootstrap.com/)
 - [Font Awesome](https://fontawesome.com/)
-- [GitHub Pages documentation](https://docs.github.com/en/pages/)
+- [GitHub Pages Documentation](https://docs.github.com/en/pages/)
 
-## License
+---
 
-No open-source license is specified in the supplied project materials. Obtain the project owners' permission before reusing or redistributing the source code, database content, or images.
+## 📄 License
+
+No open-source license is specified for this project. Obtain the project owners' permission before reusing or redistributing the source code, database content, or images.
+
+---
+
+<p align="center">
+  Made with ❤️ for students · <strong>AuraBook</strong>
+</p>
