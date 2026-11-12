@@ -292,7 +292,7 @@ Semester V project for **Subject 506 — Project Development** at **Smt. B.K. Me
 | | Name |
 |:---:|---|
 | <img src="dhruv.png" width="80" alt="Dhruv"> | **Dhruv** |
-| <img src="Devloped/marvan.jpeg" width="80" alt="Marvan"> | **Marvan** |
+| <img src="marvan.jpeg" width="80" alt="Marvan"> | **Marvan** |
 
 ---
 
